@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  background-color: #19a2ae;
+  height: 100vh;
+  width: 100vw;
+  padding: 3vh 2vw;
+}
+
+.wrapper .bgPattern {
+  position: fixed;
+  width: 50em;
+}
+
+.wrapper .bgPattern.top {
+  top: -30em;
+  left: -10em;
+}
+
+.wrapper .bgPattern.bottom {
+  bottom: -30em;
+  right: -10em;
+}
+
+.profileCard {
+  background: #fff;
+  height: 350px;
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-box-shadow: 2px 6px 20px 0px #0000004a;
+          box-shadow: 2px 6px 20px 0px #0000004a;
+}
+
+.profileCard::before {
+  content: "";
+  background-image: url("./images/bg-pattern-card.svg");
+  background-position: center right;
+  height: 35%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.profileCard__image {
+  border: 4px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  margin-top: 20%;
+}
+
+.profileCard__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.profileCard__details {
+  text-align: center;
+}
+
+.profileCard__details .profileCard__name {
+  color: #2d3248;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profileCard__details .profileCard__name span {
+  color: #969696;
+  font-weight: 400;
+}
+
+.profileCard__details .profileCard__country {
+  color: #969696;
+  font-weight: 400;
+  font-size: .78em;
+}
+
+.profileCard__stats {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  border-top: 1px solid #ccc7;
+}
+
+.profileCard__stats div {
+  padding: 10px;
+}
+
+.profileCard__stats div h3 {
+  color: #2d3248;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 7px;
+}
+
+.profileCard__stats div p {
+  color: #969696;
+  font-weight: 500;
+  font-size: .56em;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: .61em;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: inherit;
+  color: #3e52a3;
+}
+
+@media (max-width: 375px) {
+  .wrapper .bgPattern {
+    width: 50em;
+  }
+  .wrapper .bgPattern.top {
+    left: -38em;
+  }
+  .wrapper .bgPattern.bottom {
+    right: -35em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
