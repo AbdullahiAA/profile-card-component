@@ -15,21 +15,25 @@
   height: 100vh;
   width: 100vw;
   padding: 3vh 2vw;
+  overflow: hidden;
 }
 
 .wrapper .bgPattern {
-  position: fixed;
-  width: 50em;
+  position: absolute;
 }
 
 .wrapper .bgPattern.top {
-  top: -30em;
-  left: -10em;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-30%, -50%);
+          transform: translate(-30%, -50%);
 }
 
 .wrapper .bgPattern.bottom {
-  bottom: -30em;
-  right: -10em;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(30%, 60%);
+          transform: translate(30%, 60%);
 }
 
 .profileCard {
@@ -157,13 +161,15 @@
 
 @media (max-width: 375px) {
   .wrapper .bgPattern {
-    width: 50em;
+    width: 28em;
   }
   .wrapper .bgPattern.top {
-    left: -38em;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .wrapper .bgPattern.bottom {
-    right: -35em;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
   }
 }
 /*# sourceMappingURL=styles.css.map */
